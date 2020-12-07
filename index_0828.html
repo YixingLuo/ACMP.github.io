@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CAPTAIN</title>
+    <title>ACMP</title>
 <!--    <script type="text/x-mathjax-config">-->
 <!--    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});-->
 <!--    </script>-->
@@ -44,7 +44,7 @@
     <!-- NAVBAR -->
     <div class="header">
         <div class="header__main-title text-center">
-            <h1 class="display-2">CAPTAIN</h1>
+            <h1 class="display-2">ACMP</h1>
             <h5 class="display-5">Requirements-Driven Online Adaptation to Tackle Runtime Uncertainties for <br>  Autonomous Unmanned Systems</h5>
         </div>
     </div>
@@ -196,7 +196,7 @@
             </div>
             <div class="col">
                 <h5>Requirements-Driven Adaptation Process with Setting 1</h5>
-                <p>At the 7th time steps, the UAV detected and located the private house. With CAPTAIN the UAV analyzes whether the timeliness and privacy requirement can be satisfied.</p>
+                <p>At the 7th time steps, the UAV detected and located the private house. With ACMP the UAV analyzes whether the timeliness and privacy requirement can be satisfied.</p>
                 <p>After requirement satisfaction checking and analysis, the UAV found that those two requirements cannot be satisfied simultaneously and figured out an compromised resolution to go up, turning the orientation angle
                     and resolution of the camera without exposing the private house.</p>
                 <p>Finally, the UAV reached the destination cost 26 time steps at the timeliness satisfaction of $DS^1(\mathcal{X}_\xi)=91.7\%$ and privacy preserving satisfaction of $DS^2(\mathcal{X}_{P})=96.6\%$.</p>
@@ -210,7 +210,7 @@
             </div>
             <div class="col">
                 <h5>Requirements-Driven Adaptation Process with Setting 2</h5>
-                <p>At the 8th time steps, the UAV detected and located the private house. With CAPTAIN the UAV analyzes whether the timeliness and privacy requirement can be satisfied.</p>
+                <p>At the 8th time steps, the UAV detected and located the private house. With ACMP the UAV analyzes whether the timeliness and privacy requirement can be satisfied.</p>
                 <p>After requirement satisfaction checking and analysis, for the maximal requirement satisfaction, the UAV found that the timeliness requirement can be guaranteed with the compromised privacy-preservation requirement. Thus, it turned the orientation
                     angle along the flight path when affected by the private region detected.</p>
                 <p>Finally, the UAV reached the destination cost 24 time steps at the timeliness satisfaction of $DS^1(\mathcal{X}_\xi)=100\%$ and privacy preserving satisfaction of $DS^2(\mathcal{X}_{P})=83.1\%$.</p>
@@ -254,7 +254,7 @@
             <div class="col">
                 <!--<h5>Case 3 UUV Oceanic Surveillance</h5>-->
                 <p class="mb-3">This example originates from [1]. Rather than considering single-objective optimization for the UUV scenario, we extended it to achieve
-                    multiple dynamic requirements under uncertainties and disturbances through CAPTAIN, while other configurations like sensors are kept the same.
+                    multiple dynamic requirements under uncertainties and disturbances through ACMP, while other configurations like sensors are kept the same.
                     <br>The requirements to achieve in this scenario are listed as below:</p>
                 <ul>
                     <li>Scanning Distance ($R_l$): A segment of surface over a distance of $L_t=100$ km is expected to be examined by the UUV within $\Delta=10$ hours,
@@ -262,10 +262,10 @@
                     <li>Energy Consumption ($R_e$): A total amount of energy $E_t=5.4$ MJ is expected to be consumed, while the maximum amount of energy is $E=6$ MJ.</li>
                     <li>Accuracy ($R_{\varphi}$): The accuracy of sensor measurements is targeted at $A_t=90\%$, while the accuracy threshold is set as $A = 80\%$. </li>
                 </ul>
-                <p>The experimental results demonstrate the generality of CAPTAIN.
+                <p>The experimental results demonstrate the generality of ACMP.
                     The performance of the three methods are compared while adding random failures to parameters of sensors, i.e., sensor accuracy, scanning speed
                     and energy consumption. For each frequency of disturbances, we simulated 500 rounds and computed the average accuracy, scanning distance and energy consumption.
-                    From the experimental results listed in the table, with CAPTAIN, the UUV can scan a longer distance with higher accuracy and less energy consumption
+                    From the experimental results listed in the table, with ACMP, the UUV can scan a longer distance with higher accuracy and less energy consumption
                     than AMOCS-MA and GSlack.
                 </p>
 

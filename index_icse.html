@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CAPTAIN</title>
+    <title>ACMP</title>
 <!--    <script type="text/x-mathjax-config">-->
 <!--    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});-->
 <!--    </script>-->
@@ -44,7 +44,7 @@
     <!-- NAVBAR -->
     <div class="header">
         <div class="header__main-title text-center">
-            <h1 class="display-2">CAPTAIN</h1>
+            <h1 class="display-2">ACMP</h1>
             <h5 class="display-5">Requirements-Driven Online Adaptation to Tackle Runtime Uncertainties for <br>  Autonomous Unmanned Systems</h5>
         </div>
     </div>
@@ -144,7 +144,7 @@
                 <p class="mb-3"> we simulated uncertain conditions and diverse scenarios with 100 randomly generated test cases from $\{\mathcal{S}_S\}$ to $\{\mathcal{S}_S,\mathcal{S}_P,
                     \mathcal{S}_{\xi},\mathcal{S}_{\varphi},\mathcal{S}_e\}$. The test case is marked as fail if any hard constraint is violated or the mission is not finished.
                     We also compared the results with the UAV implemented with constrainted planning where all of the requirements must be totally satisfied. The success rate of constrained
-                    planning decreases when the number of soft goals increases, while Captain can maintain a high success rate, greater than $95\%$. It is because based on requirements
+                    planning decreases when the number of soft goals increases, while ACMP can maintain a high success rate, greater than $95\%$. It is because based on requirements
                     modeling, requirements are classified into soft goals and hard constraints, and it is allowed to transform violated soft goals into optimizable objectives flexibly when
                     necessary. </p>
 
@@ -231,7 +231,7 @@
                     These results show that choosing the right violation tolerance parameters can help determine the appropriate set of unsatisfied requirements with a smaller impact on
                     the algorithm’s efficiency.
                     In the case where the choice of tolerance parameter may affect the convergence in the <i>Requirements Satisfaction Optimization</i> step and result in no feasible
-                    solutions,  Captain can directly leverage the planning results from the <i>Requirements Satisfaction Checking</i> step, as illustrated in lines 13 and 14 in Algorithm
+                    solutions,  ACMP can directly leverage the planning results from the <i>Requirements Satisfaction Checking</i> step, as illustrated in lines 13 and 14 in Algorithm
                     1.</p>
 
             </div>
@@ -328,7 +328,7 @@
             </div>
             <div class="col">
                 <h5>Requirements-Driven Adaptation Process with Setting 1</h5>
-                <p>At the 7th time steps, the UAV detected and located the private house. With CAPTAIN the UAV analyzes whether the timeliness and privacy requirement can be satisfied.</p>
+                <p>At the 7th time steps, the UAV detected and located the private house. With ACMP the UAV analyzes whether the timeliness and privacy requirement can be satisfied.</p>
                 <p>After requirement satisfaction checking and analysis, the UAV found that those two requirements cannot be satisfied simultaneously and figured out an compromised resolution to go up, turning the orientation angle
                     and resolution of the camera without exposing the private house.</p>
                 <p>Finally, the UAV reached the destination cost 26 time steps at the timeliness satisfaction of $DS^1(\mathcal{X}_\xi)=91.7\%$ and privacy preserving satisfaction of $DS^2(\mathcal{X}_{P})=96.6\%$.</p>
@@ -342,7 +342,7 @@
             </div>
             <div class="col">
                 <h5>Requirements-Driven Adaptation Process with Setting 2</h5>
-                <p>At the 8th time steps, the UAV detected and located the private house. With CAPTAIN the UAV analyzes whether the timeliness and privacy requirement can be satisfied.</p>
+                <p>At the 8th time steps, the UAV detected and located the private house. With ACMP the UAV analyzes whether the timeliness and privacy requirement can be satisfied.</p>
                 <p>After requirement satisfaction checking and analysis, for the maximal requirement satisfaction, the UAV found that the timeliness requirement can be guaranteed with the compromised privacy-preservation requirement. Thus, it turned the orientation
                     angle along the flight path when affected by the private region detected.</p>
                 <p>Finally, the UAV reached the destination cost 24 time steps at the timeliness satisfaction of $DS^1(\mathcal{X}_\xi)=100\%$ and privacy preserving satisfaction of $DS^2(\mathcal{X}_{P})=83.1\%$.</p>
@@ -367,7 +367,7 @@
             </div>
         </div>
         <p class="mb-3">This example originates from [1]. Rather than considering single-objective optimization for the UUV scenario, we extended it to achieve
-                    multiple dynamic requirements under uncertainties and disturbances through CAPTAIN, while other configurations like sensors are kept the same.
+                    multiple dynamic requirements under uncertainties and disturbances through ACMP, while other configurations like sensors are kept the same.
                     <br>The requirements to achieve in this scenario are listed as below:</p>
                 <ul>
                     <li>Scanning Distance ($R_l$): A segment of surface over a distance of $L_t=100$ km is expected to be examined by the UUV within $\Delta=10$ hours,
@@ -440,7 +440,7 @@
             <div class="col">
                 <!--<h5>Case 3 UUV Oceanic Surveillance</h5>-->
                 <p> At $k = 100$ we change the available energy change from 5.4 to 5.0 MJ, at $k = 160$ we change the distance to be scanned from 100 to 105 km. The plots show that these
-                    changes in requirements lead to corresponding changes in the arrangement of sensor usage, as the time portion for $S2$ increases. The figure also shows how Captain reacts
+                    changes in requirements lead to corresponding changes in the arrangement of sensor usage, as the time portion for $S2$ increases. The figure also shows how ACMP reacts
                     to changes in sensor parameters and sensor failures. At $k = 220$, the measurement accuracy of sensor $S3$ drastically decreases from 83% to
                     43%, at $k = 290$, $S4$ stops working, and leads to an optimal solution that $S1$ is more exploited. At last, the mission end with average measurement accuracy at
                     90.1%, scanning distance at 106.7 km, energy consumption at 4.98 MJ.
@@ -467,10 +467,10 @@
             </div>
             <div class="col">
                 <!--<h5>Case 3 UUV Oceanic Surveillance</h5>-->
-                <p>The experimental results demonstrate the generality of CAPTAIN.
+                <p>The experimental results demonstrate the generality of ACMP.
                     The performance of the three methods are compared while adding random failures to parameters of sensors, i.e., sensor accuracy, scanning speed
                     and energy consumption. For each frequency of disturbances, we simulated 500 rounds and computed the average accuracy, scanning distance and energy consumption.
-                    From the experimental results listed in the table, with CAPTAIN, the UUV can scan a longer distance with higher accuracy and less energy consumption
+                    From the experimental results listed in the table, with ACMP, the UUV can scan a longer distance with higher accuracy and less energy consumption
                     than AMOCS-MA and GSlack.
                 </p>
             </div>
@@ -494,8 +494,8 @@
             </div>
             <div class="col">
                 <!--<h5>Case 3 UUV Oceanic Surveillance</h5>-->
-                <p>The difference in average computation time between AMOCS-MA and Captain is about 7~ms (0.0423 s versus 0.0344 s) in the UUV case.
-                    Captain has larger variance since the number of requirements to be optimized may vary at runtime.
+                <p>The difference in average computation time between AMOCS-MA and ACMP is about 7~ms (0.0423 s versus 0.0344 s) in the UUV case.
+                    ACMP has larger variance since the number of requirements to be optimized may vary at runtime.
                 </p>
             </div>
         </div>  <br>
